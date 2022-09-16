@@ -29,7 +29,7 @@ export default {
     submitFile(){
       let formData = new FormData();
       formData.append('file', this.file);
-      axios.post( 'http://localhost:80',
+      axios.post( 'http://localhost:8081/sendAudio',
           formData,
           {
             headers: {
